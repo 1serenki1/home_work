@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tarasevich Sergey">
+    <meta name="description" content="urok3">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+    <body>       
+
+    <form method="POST">
+        <fieldset>
+            <legend class="font">Общая информация</legend>
+            <div class="field">
+                Фамилия * <br />
+                <input required type="text" name="familiya" placeholder="Иванов" />
+            </div>
+            <div class="field">
+                Имя * <br />
+                <input required type="text" name="name" placeholder="Иван" />
+            </div>
+            <div class="field">
+                Отчество <br />
+                <input type="text" name="otchestvo" placeholder="Иванович" />
+            </div>
+            <div class="field">
+                Дата рождения * <br />
+                <input required type="date" name="day" />
+            </div>
+            <div class="field">
+                Пол<br />
+                <input type="checkbox" name="a2"><span>Мужской</span><br>
+                <input type="checkbox" name="a2"><span>Женский</span><br>
+            </div>
+            <div class="field">
+                Фото<br />
+                <input type="file" name="photo" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Контактная информация</legend>
+            <div class="field">
+                Телефон * <br />
+                <input required type="tel" name="phone" placeholder="+375" />
+            </div>
+            <div class="field">
+                Электронная почта<br />
+                <input type="email" name="email" placeholder="mail@tut.by" />
+            </div>
+            <div class="field">
+                Адрес проживания<br />
+                <input type="text" name="name" placeholder="Минск ул.Сурганова д.24 кв.5" />
+            </div>
+            <div class="field">
+                Ваш населенный пункт<br />
+                <select name="city">
+                    <option>Минск</option>
+                    <option>Брест</option>
+                    <option>Витебск</option>
+                    <option>Гомель</option>
+                    <option>Гродно</option>
+                    <option>Могилев</option>
+                </select>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend class="font">Образование (наименование учреждений)</legend>
+            <div class="field">
+                Высшее <br />
+                <input type="text" name="v" placeholder="Академия" />
+            </div>
+            <div class="field">
+                Среднее <br />
+                <input type="text" name="s" placeholder="Техникум" />
+            </div>
+            <div class="field">
+                Дополнительное <br />
+                <input type="text" name="d" placeholder="Другое" />
+            </div>
+            <div class="field">
+                Курсы <br />
+                <input type="text" name="k" placeholder="Какие курсы окончили" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Карьра</legend>
+            <div class="field">
+                Место работы 1 <br />
+                <input type="text" name="1" />
+            </div>
+            <div class="field">
+                Дата начала и дата оканчания работы 1
+                <input required type="date" name="day" />
+                <input required type="date" name="day" />
+            </div>
+            <div class="field">
+                Место работы 2 <br />
+                <input type="text" name="1" />
+            </div>
+            <div class="field">
+                Дата начала и дата оканчания работы 2
+                <input required type="date" name="day" />
+                <input required type="date" name="day" />
+            </div>
+            <div class="field">
+                Место работы 3 <br />
+                <input type="text" name="1" />
+            </div>
+            <div class="field">
+                Дата начала и дата оканчания работы 3
+                <input required type="date" name="day" />
+                <input required type="date" name="day" />
+            </div>
+            <div class="field">
+                О себе <br />
+                <textarea name="messang" placeholder="Напишите что нибудь!"></textarea>
+            </div>
+        </fieldset>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+        <!-- <input type="submit" value="Отправить"> -->
+    </form>
+</body>
+</html>
